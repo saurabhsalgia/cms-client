@@ -3,11 +3,17 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import vuetify from './plugins/vuetify';
+import VueResource from 'vue-resource'
 
 Vue.config.productionTip = false
+
+Vue.use(VueResource)
+Vue.http.options.root = 'https://7edf8d0b47b1.ngrok.io/'
 
 new Vue({
   router,
   store,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')
