@@ -9,7 +9,7 @@ import VueResource from 'vue-resource'
 Vue.config.productionTip = false
 
 Vue.use(VueResource)
-Vue.http.options.root = 'https://7edf8d0b47b1.ngrok.io/'
+Vue.http.options.root = 'https://9e277f2253dd.ngrok.io/'
 
 new Vue({
   router,
